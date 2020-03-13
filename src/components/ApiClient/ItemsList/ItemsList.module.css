@@ -1,0 +1,5 @@
+.tablePadding{
+    display: grid;
+    grid-gap: 4px;
+}
+
