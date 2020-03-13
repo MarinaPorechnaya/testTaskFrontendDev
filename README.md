@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+See full requirements here https://github.com/MarinaPorechnaya/testTaskFrontendDev/blob/master/Requirements.pdf
+
 ## Available Scripts
 
 In the project directory, you can run:
