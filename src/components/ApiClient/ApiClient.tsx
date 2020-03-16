@@ -21,19 +21,19 @@ const ApiClient: React.FC = (props) => {
 
 //"https://jsonplaceholder.typicode.com/users"
 
-    const source = sources[0].url //рука-лицо
+    const [source] = sources
 
     useEffect(() => {
         const fetchData = async () => {
             setIsLoading(true);
-            const result = await axios(source);
+            const result = await axios(source.url);
             setItems(result.data);
             setIsLoading(false);
         };
-            if(source !== ""){
+            if(source.url !== ""){
             fetchData();
         }
-    }, [source]);
+    }, [source.url]);
 
     return <>
         <KeyForm onAdd={addHandler}/>
